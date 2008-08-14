@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="eNet" Database="./eNet.tags">
+  <Project Name="libenet" Path="libenet/libenet.project" Active="No"/>
+  <Project Name="libenet_test" Path="libenet_test/libenet_test.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug Windows" Selected="no">
+      <Project Name="libenet_test" ConfigName="Debug Windows"/>
+      <Project Name="libenet" ConfigName="Debug Windows"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Debug Unix" Selected="yes">
+      <Project Name="libenet_test" ConfigName="Debug Unix"/>
+      <Project Name="libenet" ConfigName="Debug Unix"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
