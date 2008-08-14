@@ -4,7 +4,7 @@
 #include <process.h>
 #include "ethread.h"
 
-unsigned __stdcall startFunc(void* arg)
+static unsigned __stdcall startFunc(void* arg)
 {
 	eThread *thread = reinterpret_cast<eThread*>(arg);
 	if(thread) {

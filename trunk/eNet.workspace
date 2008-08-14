@@ -3,11 +3,11 @@
   <Project Name="libenet" Path="libenet/libenet.project" Active="No"/>
   <Project Name="libenet_test" Path="libenet_test/libenet_test.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug Windows" Selected="no">
+    <WorkspaceConfiguration Name="Debug Windows" Selected="yes">
       <Project Name="libenet_test" ConfigName="Debug Windows"/>
       <Project Name="libenet" ConfigName="Debug Windows"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Debug Unix" Selected="yes">
+    <WorkspaceConfiguration Name="Debug Unix" Selected="no">
       <Project Name="libenet_test" ConfigName="Debug Unix"/>
       <Project Name="libenet" ConfigName="Debug Unix"/>
     </WorkspaceConfiguration>

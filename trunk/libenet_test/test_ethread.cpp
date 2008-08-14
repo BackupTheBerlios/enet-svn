@@ -9,7 +9,7 @@ public:
 	virtual void start(){
 		while( testDestroy() == false ) {
 			printf("inside thread %d\n", this->getThreadId());
-			eThreadSleep(100);
+			eThreadSleep(10);
 		}
 		printf("got a stop() request\n");
 	}
@@ -22,7 +22,7 @@ TEST(TestStart)
 	for(size_t i=0; i<10; i++){
 		thr[i].run();
 	}
-	eThreadSleep(1000);
+	eThreadSleep(100);
 	
 	// put a stop request
 	for(size_t i=0; i<10; i++){

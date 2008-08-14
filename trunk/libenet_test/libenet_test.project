@@ -10,9 +10,6 @@
   <Dependencies Name="Debug">
     <Project Name="libenet"/>
   </Dependencies>
-  <Dependencies Name="Debug Windows">
-    <Project Name="libenet"/>
-  </Dependencies>
   <Settings Type="Executable">
     <Configuration Name="Debug Unix" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
       <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
@@ -103,6 +100,9 @@
     </Configuration>
   </Settings>
   <Dependencies Name="Debug Unix">
+    <Project Name="libenet"/>
+  </Dependencies>
+  <Dependencies Name="Debug Windows">
     <Project Name="libenet"/>
   </Dependencies>
 </CodeLite_Project>

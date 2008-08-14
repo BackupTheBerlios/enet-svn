@@ -3,7 +3,7 @@
 #include "ethread_unix.h"
 #include "ethread.h"
 
-void *startFunc(void* arg)
+static void *startFunc(void* arg)
 {
 	eThread *thread = reinterpret_cast<eThread*>(arg);
 	if(thread) {
@@ -13,7 +13,7 @@ void *startFunc(void* arg)
 	
 	// terminate the thread
 	pthread_exit(0);
-
+ 
 	return 0;
 }
 
