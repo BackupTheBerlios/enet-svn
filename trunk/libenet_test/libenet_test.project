@@ -25,7 +25,7 @@
         <LibraryPath Value="../UnitTest++/Debug"/>
         <LibraryPath Value="../libenet/Debug"/>
         <Library Value="libUnitTest++.a"/>
-        <Library Value="liblibenet.a"/>
+        <Library Value="libenet.a"/>
         <Library Value="pthread"/>
       </Linker>
       <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
