@@ -10,7 +10,7 @@
   <Dependencies Name="Debug">
     <Project Name="libenet"/>
   </Dependencies>
-  <Dependencies Name="Debug Windows">
+  <Dependencies Name="Debug Unix">
     <Project Name="UnitTest"/>
     <Project Name="libenet"/>
   </Dependencies>
@@ -42,9 +42,7 @@
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild>
-
-</CustomPreBuild>
+        <CustomPreBuild></CustomPreBuild>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Debug Windows" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
@@ -58,7 +56,7 @@
         <LibraryPath Value="../UnitTest++/Debug"/>
         <LibraryPath Value="../libenet/Debug"/>
         <Library Value="libUnitTest++.a"/>
-        <Library Value="liblibenet.a"/>
+        <Library Value="libenet.a"/>
       </Linker>
       <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
       <ResourceCompiler Required="no" Options=""/>
@@ -74,7 +72,9 @@
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild></CustomPreBuild>
+        <CustomPreBuild>
+
+</CustomPreBuild>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
@@ -105,7 +105,7 @@
       </AdditionalRules>
     </Configuration>
   </Settings>
-  <Dependencies Name="Debug Unix">
+  <Dependencies Name="Debug Windows">
     <Project Name="UnitTest"/>
     <Project Name="libenet"/>
   </Dependencies>
