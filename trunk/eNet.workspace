@@ -7,12 +7,12 @@
     <WorkspaceConfiguration Name="Debug Windows" Selected="no">
       <Project Name="libenet_test" ConfigName="Debug Windows"/>
       <Project Name="libenet" ConfigName="Debug Windows"/>
-      <Project Name="UnitTest" ConfigName="Debug"/>
+      <Project Name="UnitTest" ConfigName="Debug Windows"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Debug Unix" Selected="yes">
       <Project Name="libenet_test" ConfigName="Debug Unix"/>
       <Project Name="libenet" ConfigName="Debug Unix"/>
-      <Project Name="UnitTest" ConfigName="Debug"/>
+      <Project Name="UnitTest" ConfigName="Debug Unix"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

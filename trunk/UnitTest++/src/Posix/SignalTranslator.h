@@ -1,6 +1,8 @@
 #ifndef UNITTEST_SIGNALTRANSLATOR_H
 #define UNITTEST_SIGNALTRANSLATOR_H
 
+#ifndef __WINDOWS__
+
 #include <setjmp.h>
 #include <signal.h>
 
@@ -39,4 +41,5 @@ private:
 
 }
 
+#endif 
 #endif

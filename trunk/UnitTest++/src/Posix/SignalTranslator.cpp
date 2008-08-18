@@ -1,5 +1,7 @@
 #include "SignalTranslator.h"
 
+#ifndef __WINDOWS__
+
 namespace UnitTest {
 
 sigjmp_buf* SignalTranslator::s_jumpTarget = 0;
@@ -44,3 +46,6 @@ SignalTranslator::~SignalTranslator()
 
 
 }
+
+#endif 
+
