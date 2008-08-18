@@ -10,35 +10,40 @@
   <Dependencies Name="Debug">
     <Project Name="libenet"/>
   </Dependencies>
+  <Dependencies Name="Debug Windows">
+    <Project Name="libenet"/>
+  </Dependencies>
   <Settings Type="Executable">
     <Configuration Name="Debug Unix" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
       <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
       <Compiler Required="yes" Options="-g">
         <IncludePath Value="."/>
-        <IncludePath Value="&quot;$(UnitTestCppBase)/include/UnitTest++/&quot;"/>
+        <IncludePath Value="../UnitTest++/src/"/>
       </Compiler>
       <Linker Required="yes" Options="">
-        <LibraryPath Value="&quot;$(UnitTestCppBase)/lib&quot;"/>
+        <LibraryPath Value="../UnitTest++/Debug"/>
         <LibraryPath Value="../libenet/Debug"/>
         <Library Value="libUnitTest++.a"/>
         <Library Value="liblibenet.a"/>
         <Library Value="pthread"/>
       </Linker>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand/>
-        <BuildCommand/>
-        <SingleFileCommand/>
-        <MakefileGenerationCommand/>
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory/>
+        <WorkingDirectory></WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild/>
-        <CustomPreBuild/>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild>
+
+</CustomPreBuild>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Debug Windows" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
@@ -54,21 +59,21 @@
         <Library Value="libUnitTest++.a"/>
         <Library Value="liblibenet.a"/>
       </Linker>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand/>
-        <BuildCommand/>
-        <SingleFileCommand/>
-        <MakefileGenerationCommand/>
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory/>
+        <WorkingDirectory></WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild/>
-        <CustomPreBuild/>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
@@ -81,28 +86,26 @@
         <LibraryPath Value="&quot;$(UnitTestCppBase)/lib&quot;"/>
         <Library Value="libUnitTest++.a"/>
       </Linker>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand/>
-        <BuildCommand/>
-        <SingleFileCommand/>
-        <MakefileGenerationCommand/>
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory/>
+        <WorkingDirectory></WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild/>
-        <CustomPreBuild/>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
       </AdditionalRules>
     </Configuration>
   </Settings>
   <Dependencies Name="Debug Unix">
-    <Project Name="libenet"/>
-  </Dependencies>
-  <Dependencies Name="Debug Windows">
+    <Project Name="UnitTest"/>
     <Project Name="libenet"/>
   </Dependencies>
 </CodeLite_Project>
