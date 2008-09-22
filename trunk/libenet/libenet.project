@@ -106,8 +106,4 @@
       </AdditionalRules>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="formbuilder">
-    <File Name="mydialog.fbp"/>
-    <File Name="myframe.fbp"/>
-  </VirtualDirectory>
 </CodeLite_Project>
