@@ -32,8 +32,8 @@
     <File Name="esocket.h"/>
     <File Name="esocket.cpp"/>
   </VirtualDirectory>
-  <Dependencies Name="Debug Windows"/>
   <Dependencies Name="Debug Unix"/>
+  <Dependencies Name="Debug Windows"/>
   <Settings Type="Static Library">
     <Configuration Name="Debug Unix" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
       <General OutputFile="$(IntermediateDirectory)/libenet.a" IntermediateDirectory="./Debug" Command="" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
@@ -64,7 +64,7 @@
         <IncludePath Value="."/>
         <Preprocessor Value="__WINDOWS__"/>
       </Compiler>
-      <Linker Required="no" Options=""/>
+      <Linker Required="yes" Options=""/>
       <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
@@ -106,4 +106,8 @@
       </AdditionalRules>
     </Configuration>
   </Settings>
+  <VirtualDirectory Name="formbuilder">
+    <File Name="mydialog.fbp"/>
+    <File Name="myframe.fbp"/>
+  </VirtualDirectory>
 </CodeLite_Project>
