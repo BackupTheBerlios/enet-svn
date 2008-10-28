@@ -49,7 +49,6 @@
   <Dependencies Name="Debug"/>
   <VirtualDirectory Name="posix"/>
   <VirtualDirectory Name="win"/>
-  <Dependencies Name="Debug Unix"/>
   <Dependencies Name="Debug Windows"/>
   <Settings Type="Static Library">
     <Configuration Name="Debug Unix" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
@@ -57,7 +56,7 @@
       <Compiler Required="yes" Options="">
         <IncludePath Value="."/>
       </Compiler>
-      <Linker Required="no" Options=""/>
+      <Linker Required="yes" Options=""/>
       <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
@@ -96,10 +95,9 @@
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild>
-
-</CustomPreBuild>
+        <CustomPreBuild></CustomPreBuild>
       </AdditionalRules>
     </Configuration>
   </Settings>
+  <Dependencies Name="Debug Unix"/>
 </CodeLite_Project>
