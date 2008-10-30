@@ -65,8 +65,11 @@ bool eQueueImpl<T>::get(T& item, long timeout)
 
 		int rc = pthread_cond_timedwait(&m_cond, &m_mutex, &ts);
 		if (rc == ETIMEDOUT) {
+			printf("eQueueImpl::got timeout!\n");
 			pthread_mutex_unlock(&m_mutex);
 			return false;
+		}else{
+			perror("pthread_cond_timedwait");
 		}
 	}
 
