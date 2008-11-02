@@ -89,10 +89,14 @@ TEST ( BlockingTest )
 	for ( size_t i=0; i<100; i++ ) {
 		g_queue2.put ( "eran" );
 	}
-	
+
 	WorkerThread thr;
 	thr.run();
-	
+
+#ifdef __WINDOWS__
+	Sleep(INFINITE);
+#else
 	sleep(10000);
+#endif
 }
 
