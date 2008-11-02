@@ -32,7 +32,6 @@
     <File Name="esocket.h"/>
     <File Name="esocket.cpp"/>
   </VirtualDirectory>
-  <Dependencies Name="Debug Unix"/>
   <Dependencies Name="Debug Windows"/>
   <Settings Type="Static Library">
     <Configuration Name="Debug Unix" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
@@ -41,23 +40,21 @@
         <IncludePath Value="."/>
       </Compiler>
       <Linker Required="yes" Options=""/>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand></CleanCommand>
-        <BuildCommand></BuildCommand>
-        <SingleFileCommand></SingleFileCommand>
-        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <CleanCommand/>
+        <BuildCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory></WorkingDirectory>
+        <WorkingDirectory/>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild>
-
-</CustomPreBuild>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Debug Windows" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
@@ -67,21 +64,21 @@
         <Preprocessor Value="__WINDOWS__"/>
       </Compiler>
       <Linker Required="yes" Options=""/>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand></CleanCommand>
-        <BuildCommand></BuildCommand>
-        <SingleFileCommand></SingleFileCommand>
-        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <CleanCommand/>
+        <BuildCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory></WorkingDirectory>
+        <WorkingDirectory/>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild></CustomPreBuild>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
       </AdditionalRules>
     </Configuration>
     <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="">
@@ -90,22 +87,23 @@
         <IncludePath Value="."/>
       </Compiler>
       <Linker Required="no" Options=""/>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""></Debugger>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort=""/>
       <ResourceCompiler Required="no" Options=""/>
       <PreBuild/>
       <PostBuild/>
       <CustomBuild Enabled="no">
-        <CleanCommand></CleanCommand>
-        <BuildCommand></BuildCommand>
-        <SingleFileCommand></SingleFileCommand>
-        <MakefileGenerationCommand></MakefileGenerationCommand>
-        <ThirdPartyToolName></ThirdPartyToolName>
-        <WorkingDirectory></WorkingDirectory>
+        <CleanCommand/>
+        <BuildCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
       </CustomBuild>
       <AdditionalRules>
-        <CustomPostBuild></CustomPostBuild>
-        <CustomPreBuild></CustomPreBuild>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
       </AdditionalRules>
     </Configuration>
   </Settings>
+  <Dependencies Name="Debug Unix"/>
 </CodeLite_Project>
