@@ -62,7 +62,7 @@ bool eQueueImpl<T>::get ( T& item, long timeout )
 		// add our timeout
 		ts.tv_sec  += ( timeout / 1000 );
 		ts.tv_nsec += ( timeout % 1000 ) * 1000000;
-	
+
 		// nsec can not bre greater than 1000000000 (sec)
 		if ( ts.tv_nsec >= 1000000000 ) {
 			ts.tv_nsec -= 1000000000;

@@ -4,7 +4,7 @@
 #include <sys/types.h>
 
 #ifdef __WINDOWS_
-#include <winsock2.h>
+# include <winsock2.h>
 typedef SOCKET socket_t;
 #else
 typedef int socket_t;
@@ -19,10 +19,8 @@ public:
 	~eSocket();
 
 	size_t sendData(const char* data, size_t len);
-	size_t recvData(char **data, size_t maxBuff);
-	socket_t GetHandle() {
-		return m_socket;
-	}
+	size_t recvData(char **data, char *buffer, size_t bufsize);
+	socket_t GetHandle() {return m_socket;}
 };
 
 #endif  //__ESOCKET_H__
