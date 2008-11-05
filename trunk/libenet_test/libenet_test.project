@@ -99,11 +99,11 @@
       </AdditionalRules>
     </Configuration>
   </Settings>
-  <Dependencies Name="Debug Unix">
+  <Dependencies Name="Debug Windows">
     <Project Name="UnitTest"/>
     <Project Name="libenet"/>
   </Dependencies>
-  <Dependencies Name="Debug Windows">
+  <Dependencies Name="Debug Unix">
     <Project Name="UnitTest"/>
     <Project Name="libenet"/>
   </Dependencies>

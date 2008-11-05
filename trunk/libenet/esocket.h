@@ -20,7 +20,7 @@ public:
 
 	size_t sendData(const char* data, size_t len);
 	size_t recvData(char **data, char *buffer, size_t bufsize);
-	socket_t GetHandle() {return m_socket;}
+	socket_t getHandle() {return m_socket;}
 };
 
 #endif  //__ESOCKET_H__
